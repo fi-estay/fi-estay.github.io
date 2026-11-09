@@ -1,6 +1,6 @@
 # felipestay.github.io
 
-Código fuente de mi página académica: https://felipestay.github.io
+Código fuente de mi página académica: https://fi-estay.github.io
 
 Sitio construido con [Jekyll](https://jekyllrb.com/) y el tema
 [al-folio](https://github.com/alshedivat/al-folio), publicado mediante GitHub Pages.
