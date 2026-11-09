@@ -1,1 +1,1 @@
-User-agent: * Disallow: Sitemap: https://felipestay.github.io/sitemap.xml
+User-agent: * Disallow: Sitemap: https://fi-estay.github.io/sitemap.xml
