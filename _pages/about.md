@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: >
-  Sociologist · PhD Candidate, <a href="https://sociologia.uc.cl" target="_blank">UC Chile</a> ·
+  Sociologist · PhD in Sociology, <a href="https://sociologia.uc.cl" target="_blank">UC Chile</a> ·
   Executive Director, <a href="https://moviliza.cl" target="_blank">Corporación Moviliza</a>
 
 profile:
@@ -27,7 +27,7 @@ latest_posts:
   enabled: false
 ---
 
-I am a sociologist and PhD candidate in Sociology at the **Pontificia Universidad Católica de Chile**, and Executive Director of **[Corporación Moviliza](https://moviliza.cl)**, a non-profit organisation implementing [Housing First](https://en.wikipedia.org/wiki/Housing_First) programs in Santiago and Valparaíso.
+I am a sociologist with a PhD in Sociology from the **Pontificia Universidad Católica de Chile**, and Executive Director of **[Corporación Moviliza](https://moviliza.cl)**, a non-profit organisation implementing [Housing First](https://en.wikipedia.org/wiki/Housing_First) programs in Santiago and Valparaíso.
 
 My research sits at the intersection of **homelessness, social inequality, and social policy** in Chile and Latin America. My doctoral dissertation examines how inequality perceptions shape system justification and redistributive attitudes, using experimental methods and causal inference approaches.
 
@@ -35,7 +35,7 @@ I serve as an editor of the **[International Journal on Homelessness](https://jo
 
 My applied work includes leading Chile's largest Housing First program, conducting program evaluations, and advising local governments on homelessness policy. I have presented research at international conferences in Halifax, Lisbon, Chicago, Mexico City, and Buenos Aires.
 
-**Education:** PhD in Sociology (UC Chile, in progress) · MSc in Social Policy and Planning (LSE, 2014) · MSc in Sociology (University of Bristol, 2012) · BA in Sociology (Universidad Alberto Hurtado, 2005)
+**Education:** PhD in Sociology (UC Chile, 2026) · MSc in Social Policy and Planning (LSE, 2014) · MSc in Sociology (University of Bristol, 2012) · BA in Sociology (Universidad Alberto Hurtado, 2005)
 
 ---
 
