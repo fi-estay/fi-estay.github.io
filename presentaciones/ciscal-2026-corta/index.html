@@ -1232,6 +1232,13 @@ Ignacio Eissmann, PhD
 
   <p class="date">* Declaración de intereses. El autor dirige Corporación Moviliza, ejecutor de Vivienda Primero.</p>
 </section>
+<section>
+<section id="el-problema" class="title-slide slide level1 portadilla center" data-background-color="#14323c" data-kicker="Parte 1">
+<h1>El problema</h1>
+<div class="bajada">
+<p>Por qué la retención decide, y cómo se mide en Chile</p>
+</div>
+</section>
 <section id="la-retención-decide-y-en-chile-decide-plata-y-ejecutores" class="slide level2" data-kicker="1 · El problema">
 <h2>La retención decide, y en Chile decide plata y ejecutores</h2>
 <ul>
@@ -1243,9 +1250,81 @@ Ignacio Eissmann, PhD
 <p>Si la retención decide, la forma de medirla decide.</p>
 </div>
 </section>
-<section id="afuera-se-mide-a-igual-antigüedad.-en-chile-en-una-fecha-del-calendario" class="slide level2 smaller" data-kicker="1 · El problema">
-<h2>Afuera se mide a igual antigüedad. En Chile, en una fecha del calendario</h2>
-<p>Las métricas internacionales (M1–M3) miran a cada persona a <span class="math inline">h</span> meses de <strong>su</strong> ingreso. Las tres chilenas miran a todas el mismo día.</p>
+<section id="seis-formas-de-medir-la-retención-tres-decisiones" class="slide level2 smaller" data-kicker="1 · El problema">
+<h2>Seis formas de medir la retención, tres decisiones</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 23%">
+<col style="width: 23%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Cuándo se mira</th>
+<th style="text-align: left;">Pérdida</th>
+<th style="text-align: center;">Invariante</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>M1</strong> Puntual de cohorte · Pathways, HF Europe, Reino Unido</td>
+<td style="text-align: left;">A <span class="math inline">h</span> meses del ingreso</td>
+<td style="text-align: left;">No estar alojado en <span class="math inline">t_i+h</span></td>
+<td style="text-align: center;">Sí</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>M2</strong> Ponderada por tiempo · ensayos aleatorizados</td>
+<td style="text-align: left;">Todo <span class="math inline">[t_i,\,t_i+H]</span></td>
+<td style="text-align: left;">Días fuera de vivienda</td>
+<td style="text-align: center;">Sí</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>M3</strong> HUD 7b.2 · Estados Unidos</td>
+<td style="text-align: left;">Cierre del período</td>
+<td style="text-align: left;"><span class="math inline">V, F, R</span></td>
+<td style="text-align: center;">Parcial</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>M4</strong> Tasa ministerial · MDSF</td>
+<td style="text-align: left;">Fecha de corte <span class="math inline">C</span></td>
+<td style="text-align: left;"><span class="math inline">V, F, X, R</span></td>
+<td style="text-align: center;"><strong>No</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>M5</strong> Concursos · MDSF</td>
+<td style="text-align: left;">Fecha de corte <span class="math inline">C</span></td>
+<td style="text-align: left;"><span class="math inline">V, F, R</span></td>
+<td style="text-align: center;"><strong>No</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>M6</strong> Indicador de propósito · DIPRES</td>
+<td style="text-align: left;">31-dic del año de ingreso</td>
+<td style="text-align: left;">Menos de 6 meses en el año</td>
+<td style="text-align: center;"><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="mensaje">
+<p>Tres decisiones definen cada métrica: cuándo se mira, a quién se cuenta y qué es pérdida. Invariante a la exposición significa que la cifra no cambia si cambia el calendario de ingresos.</p>
+</div>
+<aside class="notes">
+<p>Notación: <span class="math inline">i</span> persona, <span class="math inline">t_i</span> ingreso, <span class="math inline">D_i</span> motivo de egreso (<span class="math inline">A</span> activo, <span class="math inline">V</span> voluntario, <span class="math inline">F</span> forzoso, <span class="math inline">X</span> traslado, <span class="math inline">G</span> exitoso, <span class="math inline">H</span> salud, <span class="math inline">M</span> fallecimiento, <span class="math inline">R</span> reclusión), <span class="math inline">C</span> corte, <span class="math inline">h</span> horizonte.</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+<section id="las-tres-chilenas-miran-a-todas-las-personas-el-mismo-día" class="slide level2 smaller" data-kicker="1 · El problema">
+<h2>Las tres chilenas miran a todas las personas el mismo día</h2>
 <div class="formula compacta">
 <p><span class="math display">
 \text{M4}\ \ R_g(C)=\frac{\lvert\{i\in g:\ D_i=A\}\rvert}{\lvert\{i\in g:\ D_i\notin\{G,H,M\}\}\rvert}
@@ -1266,6 +1345,13 @@ Ignacio Eissmann, PhD
 </div>
 <div class="mensaje">
 <p>Ninguna es invariante a la exposición: cambian con el calendario de ingresos aunque nadie se vaya antes ni después.</p>
+</div>
+</section></section>
+<section>
+<section id="un-caso" class="title-slide slide level1 portadilla center" data-background-color="#14323c" data-kicker="Parte 2">
+<h1>Un caso</h1>
+<div class="bajada">
+<p>Diez personas idénticas, medidas con M4, M6 y M7</p>
 </div>
 </section>
 <section id="diez-personas-idénticas-en-dos-cohortes-m4-ve-dos-programas" class="slide level2" data-kicker="2 · Un caso">
@@ -1309,6 +1395,13 @@ display:block!important;
 </div>
 <div class="mensaje clave">
 <p>En enero, 9 de 10 cumplen 6 meses antes del 31 de diciembre, incluida P3, que fallece en el mes 7. En agosto, nadie alcanza.</p>
+</div>
+</section></section>
+<section>
+<section id="la-propuesta" class="title-slide slide level1 portadilla center" data-background-color="#14323c" data-kicker="Parte 3">
+<h1>La propuesta</h1>
+<div class="bajada">
+<p>Retención por cohorte a horizonte fijo, con el reloj de cada persona</p>
 </div>
 </section>
 <section id="m7-da-79-para-las-dos-cohortes.-es-m4-con-reloj" class="slide level2 smaller" data-kicker="3 · La propuesta">
@@ -1364,6 +1457,13 @@ E=\{V,F,X,R\}\ \text{evento},\quad \{A,G,H,M\}\ \text{censura}
 </table>
 <div class="mensaje">
 <p>Misma definición de pérdida que M4. Cada persona se mira a 6 y 12 meses de su propio ingreso, y quien lleva menos aporta el tiempo que lleva. P4 y P5 no entran en <span class="math inline">\hat S(12)</span> en ninguna cohorte.</p>
+</div>
+</section></section>
+<section>
+<section id="resultados" class="title-slide slide level1 portadilla center" data-background-color="#14323c" data-kicker="Parte 4">
+<h1>Resultados</h1>
+<div class="bajada">
+<p>1.724 participantes, 15 ejecutores, 2019–2026. M7 frente a M4, M5 y M6</p>
 </div>
 </section>
 <section id="con-m7-la-retención-chilena-está-en-el-rango-internacional" class="slide level2" data-kicker="4 · Resultados">
@@ -1502,6 +1602,13 @@ display:block!important;
 <div class="mensaje clave">
 <p>36 convenios. A igual <span class="math inline">\hat S(12)</span>, cada año de antigüedad resta 6 puntos de M5 (IC 4–8). Mismo ejecutor y región, 80% y 79% a 12 meses: 3 y 5 puntos.</p>
 </div>
+</section></section>
+<section>
+<section id="riesgos-y-cierre" class="title-slide slide level1 portadilla center" data-background-color="#14323c" data-kicker="Parte 5">
+<h1>Riesgos y cierre</h1>
+<div class="bajada">
+<p>Qué pasa cuando un indicador sin tiempo decide cupos y convenios</p>
+</div>
 </section>
 <section id="medir-sin-tiempo-en-un-sistema-de-suma-cero" class="slide level2" data-kicker="5 · Riesgos">
 <h2>Medir sin tiempo en un sistema de suma cero</h2>
@@ -1530,7 +1637,7 @@ overflow: hidden!important;
 display:block!important;
 }</style></aside>
 </section>
-<section id="qué-cambiar" class="slide level2" data-kicker="6 · Cierre">
+<section id="qué-cambiar" class="slide level2" data-kicker="5 · Cierre">
 <h2>Qué cambiar</h2>
 <ul>
 <li><strong>Chile.</strong> El MDSF se comprometió a rediseñar sus indicadores en el Sistema Calle. La prueba es simple: si el nuevo no es invariante a la exposición, volverá a medir la expansión y a llamarla resultado. La fórmula de los concursos también.</li>
@@ -1543,7 +1650,7 @@ display:block!important;
 <div class="nota">
 <p>[COMPLETAR: correo · QR al working paper]</p>
 </div>
-</section>
+</section></section>
 <section>
 <section id="respaldo" class="title-slide slide level1 portadilla center" data-background-color="#14323c">
 <h1>Respaldo</h1>
