@@ -1547,28 +1547,81 @@ overflow: hidden!important;
 display:block!important;
 }</style></aside>
 </section>
-<section id="las-tres-chilenas-miran-a-todas-las-personas-el-mismo-día" class="slide level2 smaller" data-kicker="1 · El problema">
-<h2>Las tres chilenas miran a todas las personas el mismo día</h2>
-<div class="formula compacta">
+<section id="m4-tasa-ajustada-a-fecha-de-corte" class="slide level2" data-kicker="1 · El problema">
+<h2>M4 · Tasa ajustada a fecha de corte</h2>
+<div class="fuente">
+<p>Ministerio de Desarrollo Social y Familia · anexo de tasas por ejecutor, convenio y cohorte · Eissmann y Estay (2026)</p>
+</div>
+<div class="formula">
 <p><span class="math display">
-\text{M4}\ \ R_g(C)=\frac{\lvert\{i\in g:\ D_i=A\}\rvert}{\lvert\{i\in g:\ D_i\notin\{G,H,M\}\}\rvert}
-\qquad
-\text{M5}\ \ R_g=\frac{\lvert\{i\in g:\ D_i\in\{A,G\}\}\rvert}{\lvert\{i\in g:\ D_i\notin\{M,X,H\}\}\rvert}
-</span> <span class="math display">
-\text{M6}\ \ I(y)=\frac{\lvert\{i:\ y_i=y,\ m_i\ge 6\}\rvert}{\lvert\{i:\ y_i=y\}\rvert},\qquad m_i=\min(e_i,\ \text{31-dic-}y)-t_i
+R_g(C)=\frac{\lvert\{\,i\in g:\ D_i=A\,\}\rvert}{\lvert\{\,i\in g:\ D_i\notin\{G,\,H,\,M\}\,\}\rvert}
 </span></p>
 </div>
 <div class="donde">
 <p>Donde</p>
 <ul>
-<li><strong>M4</strong> tasa ministerial por convenio y cohorte, a la fecha de corte <span class="math inline">C</span></li>
-<li><strong>M5</strong> fórmula de los concursos: 7, 5, 3 o 0 puntos según <span class="math inline">R_g</span></li>
-<li><strong>M6</strong> indicador DIPRES: 6 meses consecutivos <strong>dentro del año</strong> de ingreso</li>
-<li><strong><span class="math inline">D_i</span></strong> <span class="math inline">A</span> activo · <span class="math inline">V</span> voluntario · <span class="math inline">F</span> forzoso · <span class="math inline">X</span> traslado · <span class="math inline">G</span> exitoso · <span class="math inline">H</span> salud · <span class="math inline">M</span> fallecimiento</li>
+<li><strong><span class="math inline">g</span></strong> grupo evaluado, convenio, cohorte o ejecutor</li>
+<li><strong><span class="math inline">C</span></strong> fecha de corte (anexo ministerial, 15-abr-2025)</li>
+<li><strong>Numerador</strong> personas de <span class="math inline">g</span> activas el día <span class="math inline">C</span></li>
+<li><strong>Denominador</strong> ingresados a <span class="math inline">g</span> menos egresos exitosos <span class="math inline">G</span>, por salud <span class="math inline">H</span> y fallecidos <span class="math inline">M</span></li>
+<li><strong>Pérdida</strong> <span class="math inline">V</span>, <span class="math inline">F</span>, <span class="math inline">X</span>, <span class="math inline">R</span></li>
+<li><strong>Antigüedad</strong> cada persona lleva <span class="math inline">C-t_i</span> meses, distinto para cada una</li>
 </ul>
 </div>
 <div class="mensaje">
-<p>Ninguna es invariante a la exposición: cambian con el calendario de ingresos aunque nadie se vaya antes ni después.</p>
+<p>Suma en una misma cifra a personas con dos meses y con cinco años en el programa.</p>
+</div>
+</section>
+<section id="m5-fórmula-de-los-concursos" class="slide level2" data-kicker="1 · El problema">
+<h2>M5 · Fórmula de los concursos</h2>
+<div class="fuente">
+<p>Bases de los concursos de continuidad, MDSF (2025)</p>
+</div>
+<div class="formula compacta">
+<p><span class="math display">
+R_g=\frac{\lvert\{\,i\in g:\ D_i\in\{A,\,G\}\,\}\rvert}{\lvert\{\,i\in g:\ D_i\notin\{M,\,X,\,H\}\,\}\rvert}
+\qquad
+\text{puntaje}=\begin{cases}7 &amp; R_g\ge 0{,}75\\ 5 &amp; 0{,}65\le R_g&lt;0{,}75\\ 3 &amp; 0{,}51\le R_g&lt;0{,}65\\ 0 &amp; R_g&lt;0{,}51\end{cases}
+</span></p>
+</div>
+<div class="donde">
+<p>Donde</p>
+<ul>
+<li><strong><span class="math inline">g</span></strong> convenio que postula a continuidad</li>
+<li><strong>Numerador</strong> activos <span class="math inline">A</span> más egresos exitosos <span class="math inline">G</span>, revinculación familiar o vivienda independiente</li>
+<li><strong>Denominador</strong> ingresados menos fallecidos <span class="math inline">M</span>, traslados a otro convenio <span class="math inline">X</span> y egresos por salud <span class="math inline">H</span></li>
+<li><strong>Fecha</strong> se calcula al momento de postular</li>
+</ul>
+</div>
+<div class="mensaje">
+<p>Cuenta la graduación como éxito, pero se juega en una fecha y no a igual antigüedad.</p>
+</div>
+</section>
+<section id="m6-indicador-de-propósito" class="slide level2" data-kicker="1 · El problema">
+<h2>M6 · Indicador de propósito</h2>
+<div class="fuente">
+<p>Monitoreo de la Oferta Pública 2024, Vivienda Primero · DIPRES (actualizado 10-03-2026)</p>
+</div>
+<div class="formula">
+<p><span class="math display">
+I(y)=\frac{\lvert\{\,i:\ y_i=y,\ m_i\ge 6\,\}\rvert}{\lvert\{\,i:\ y_i=y\,\}\rvert}
+\qquad
+m_i=\min\!\left(e_i,\ \text{31-dic-}y\right)-t_i
+</span></p>
+</div>
+<div class="donde">
+<p>Donde</p>
+<ul>
+<li><strong><span class="math inline">y</span></strong> año evaluado · <strong><span class="math inline">y_i</span></strong> año de ingreso de <span class="math inline">i</span></li>
+<li><strong><span class="math inline">m_i</span></strong> meses de <span class="math inline">i</span> en vivienda dentro de su año de ingreso</li>
+<li><strong><span class="math inline">e_i</span></strong> fecha de egreso; si sigue activa, se toma el 31 de diciembre</li>
+<li><strong>Numerador</strong> ingresados en <span class="math inline">y</span> con 6 meses consecutivos antes del 31-dic</li>
+<li><strong>Denominador</strong> todos los ingresados en <span class="math inline">y</span></li>
+<li><strong>Calificación</strong> DIPRES lo declaró pertinente y correctamente formulado</li>
+</ul>
+</div>
+<div class="mensaje">
+<p>El horizonte es de 6 meses, pero el reloj se corta el 31 de diciembre.</p>
 </div>
 </section></section>
 <section>
